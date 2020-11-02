@@ -4,5 +4,6 @@ class Song
   def new(name)
     song = Song.new
     song.name = name
+    @@all << song
   end
 end
