@@ -7,7 +7,7 @@ class Artist
   end
 
   def songs
-    Song.all
+    Song.all.collect {|song| song.artist.name == self.name}
   end
   def add_song
   end
